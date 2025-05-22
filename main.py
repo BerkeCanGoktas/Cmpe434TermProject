@@ -214,8 +214,8 @@ def main():
             repulsion_wall = compute_repulsion_force(robot.position(), wall_positions, repulsion_radius=WALL_REPULSION_RADIUS, strength=WALL_REPULSION_STRENGTH)
             repulsion_obstacle = compute_obstacle_repulsion(robot.position(), robot.yaw(), m, obstacles, repulsion_radius=OBSTACLE_REPULSION_RADIUS, strength=OBSTACLE_REPULSION_STRENGTH)
             repulsion_force = repulsion_wall + repulsion_obstacle
-            # if DEBUG:
-            print(f"Repulsion force: {repulsion_force}, mag: {np.linalg.norm(repulsion_force)}")
+            if DEBUG:
+                print(f"Repulsion force: {repulsion_force}, mag: {np.linalg.norm(repulsion_force)}")
 
             if not reverse and np.linalg.norm(repulsion_wall) > REPULSION_BACK_THRESHOLD:
                 reverse = True

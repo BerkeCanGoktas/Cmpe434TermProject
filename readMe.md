@@ -45,9 +45,13 @@ Two successful and one failure cases are shown below for both path tracking, hea
 
 **Video 1: A Successful Demonstration-1**  
 
+![A Successful Demonstration-2](assets/videos/success2.gif)
+
+**Video 2: A Successful Demonstration-2**  
+
 ![An Unsuccessful Demonstration](assets/videos/unsuccess.gif)
 
-**Video 1: An Unsuccessful Demonstration**  
+**Video 3: An Unsuccessful Demonstration**  
 
 ## Results
 As it can be seen from the demonstration videos, the approach is successful but still imperfect. It lacks the power to handle the edge cases and fails from time to time. So to improve the controller more layers has to be added or the force field approach has to be abandoned. Either way, the robot can be improved but since the main goal of the project was to use these algorithms for real use cases, the development process was stopped here.
